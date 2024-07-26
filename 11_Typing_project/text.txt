@@ -1,0 +1,5 @@
+Hello everyone this is a text test for this app.
+This is another test block for this project.
+Say hello to the world and dive into the projects of codeworld.
+The quick brown fox jumped over the rest of the sentence that I forgot.
+Okay this is the last sentence of text.txt file.

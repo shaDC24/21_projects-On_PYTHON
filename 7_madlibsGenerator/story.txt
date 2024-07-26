@@ -1,0 +1,13 @@
+In <part> 2, we examined sorting algorithms for serial computers (random-access machines, or RAM’s) that allow only one operation to be executed at a time. In this
+chapter, we investigate sorting algorithms based on a comparison-<network> modelof computation, in <which> many comparison operations can be performed simultaneously.
+Comparison <network>s differ from RAM’s in two important respects. First, <the>y
+can only perform comparisons. Thus, an algorithm such as counting sort (see<section> 8.2) cannot be implemented on a comparison <network>. Second, unlike
+<the> RAM model, in <which> operations occur serially—that is, one after ano<the>r—operations in a comparison <network> may occur at <the> same time, or “in parallel.”
+As we shall see, this characteristic allows <the> construction of comparison <network>sthat sort n values in sublinear time.
+We begin in <section> 27.1 by defining comparison <network>s and sorting <network>s.We also give a natural definition for <the> “running time” of a comparison <network>
+in terms of <the> depth of <the> <network>. <section> 27.2 proves <the> “zero-one principle,”
+<<which>> greatly eases <the> task of analyzing <the> correctness of sorting <network>s.<the> efficient sorting <network> that we shall design is essentially a parallel version
+of <the> merge-sort algorithm from <section> 2.3.1. Our construction will have threesteps. <section> 27.3 presents <the> design of a “bitonic” sorter that will be our basic
+building block. We modify <the> bitonic sorter slightly in <section> 27.4 to produce
+a merging <network> that can merge two sorted sequences into one sorted sequence.Finally, in <section> 27.5, we assemble <the>se merging <network>s into a sorting 
+<network> that can sort n values in O(lg2 n) time.
